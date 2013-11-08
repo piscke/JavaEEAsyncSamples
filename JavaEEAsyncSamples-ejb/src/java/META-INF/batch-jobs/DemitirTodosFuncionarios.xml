@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<job id="DemitirTodosFuncionarios" xmlns="http://xmlns.jcp.org/xml/ns/javaee" version="1.0">
+    <properties>
+        <property name="partitions" value="10"/>
+    </properties>    
+    <step id="process">
+        <chunk item-count="1">
+            <reader ref="DemitirTodosReader"/>
+            <processor ref="DemitirTodosProcessor"/>
+            <writer ref="DemitirTodosWriter"/>
+        </chunk>
+        <partition>
+            <mapper ref="DemitirTodosPartitionMapper"/>
+        </partition>
+    </step>
+</job>

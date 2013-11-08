@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+		<h1>Orion JavaEE</h1>
+        
+        Foi implementado um exemplo simples para representar a regra de negócio que é a demissão de um funcionário.<br/>O cálculo para demissão de um funcionário dura <b>10 segundos</b> e apenas seta o flag ativo para false.
+        
+        <h3>Consulta</h3>
+        <a href=".\Ativos">Ativos</a>
+        <br />
+        <a href=".\Todos">Todos</a>
+        <br />
+        
+        <h3>Ações</h3>
+        Id: <input id="demitir"/><a href="#" onclick="window.location = 'Demitir?' + document.getElementById('demitir').value;">Demitir</a>
+        <br />
+        Id: <input id="DemitirAssincrono"/><a href="#" onclick="window.location = 'DemitirAssincrono?' + document.getElementById('DemitirAssincrono').value;">Disparar demissão assincrona</a>
+        <br />
+        Id: <input id="DemitirMensagem"/><a href="#" onclick="window.location = 'DemitirMensagem?' + document.getElementById('DemitirMensagem').value;">Enviar mensagem para demitir</a>
+        <br />
+        <br />
+        <a href=".\DemitirProcesso">Disparar processo batch de demissão em massa</a>
+
+        <h3>Massa de dados</h3>
+        <a href=".\MassaDados">Restaurar massa de dados</a>    </body>
+</html>
