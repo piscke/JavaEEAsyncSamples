@@ -2,11 +2,6 @@ JavaEEAsyncSamples
 ==================
 Foi implementado um exemplo simples para representar a regra de negócio que é a demissão de um funcionário. O cálculo para demissão de um funcionário dura 10 segundos e apenas seta o flag ativo para false. As tecnologias utilizadas são apresentadas abaixo.
 
-##JavaEE
-O objetivo da plataforma Java EE é fornecer aos desenvolvedores um poderoso conjunto de APIs para diminuir o tempo de desenvolvimento, reduzir a complexidade da aplicação, e melhorar o desempenho de aplicações corporativas.
-A plataforma Java EE é desenvolvida através do Java Community Process (JCP). É um Grupo de peritos, composto por partes interessadas, para definir as várias tecnologias Java EE. O trabalho da Comunidade Java no âmbito do programa JCP ajuda a garantir padrão de estabilidade e compatibilidade cross-plataform da tecnologia Java.
-A plataforma Java EE possui três alternativas para trabalhar com processamento assíncrono, nas próximas seções são apresentadas essas opções e algumas de suas características.
-
 ### 1) Session Bean: Asynchronous Method Invocation
 Beans de sessão podem implementar métodos assíncronos, são métodos de negócios onde o controle é devolvido ao cliente pelo container EJB antes que o método seja invocado na instância do bean de sessão. Os clientes podem então usar a API para recuperar o resultado, cancelar a invocação, e verificar exceções.
 Os métodos assíncrono são normalmente utilizados para operações de longa duração, para tarefas de processamento intensivo, para tarefas background, para aumentar o rendimento da aplicação, ou para melhorar a usabilidade em relação ao tempo de resposta se o resultado invocado não é necessário imediatamente.
